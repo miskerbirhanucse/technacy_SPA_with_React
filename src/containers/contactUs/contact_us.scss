@@ -1,0 +1,105 @@
+.app__contact {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.app__contact-content {
+  display: flex;
+  flex-direction: column;
+  margin: 4em 2rem 0rem 4rem;
+  // width: 40%;
+  h2 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+}
+.app__contact-social {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: flex-start;
+  align-items:flex-start;
+  padding: 3rem 1rem;
+}
+.app__contact-linkedin,.app__contact-facebook{
+  filter: invert(41%) sepia(7%) saturate(3640%) hue-rotate(183deg) brightness(94%) contrast(92%);
+}
+.app__contact-telegram{
+  filter:invert(59%) sepia(96%) saturate(1414%) hue-rotate(166deg) brightness(91%) contrast(88%);
+}
+.app__contact-twitter{
+  filter: invert(41%) sepia(40%) saturate(3357%) hue-rotate(181deg) brightness(106%) contrast(88%);
+}
+.app__contact-instagram{
+filter:invert(14%) sepia(46%) saturate(6221%) hue-rotate(310deg) brightness(100%) contrast(111%);
+}
+.app__contact-form {
+  width: 40%;
+  flex-direction: column;
+  margin: 3rem 5rem;
+  div {
+    width: 100%;
+
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+
+    transition: all 0.3s ease-in-out;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 7px;
+      background-color: var(--gray-color);
+
+      font-family: var(--font-base);
+      color: var(--white-color);
+      outline: none;
+    }
+
+    textarea {
+      height: 170px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 25px var(--gray-color);
+    }
+  }
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+
+    font-weight: 500;
+    color: var(--white-color);
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-family: var(--font-base);
+
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2430af;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}

@@ -1,0 +1,40 @@
+.app__aboutUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+}
+.app__aboutUs-title {
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 3rem;
+}
+.app__aboutUs-line {
+  display: flex;
+  margin: 1rem;
+  width: 100%;
+  height: 0.07px;
+  background: gray;
+}
+.app__aboutUs-main {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 3rem;
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+.app__aboutUs-heading {
+  padding: 2rem 1rem;
+}
+.app__aboutUs-image {
+  width: 500px;
+  height: auto;
+  @media screen and (max-width: 650px) {
+    width: 400px;
+  }
+}
+.app__aboutUs-image img {
+  width: 100%;
+}
